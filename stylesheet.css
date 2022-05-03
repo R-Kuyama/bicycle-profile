@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box; /* コンテンツの幅をパディング込みにする */
+	padding: 0; /* padding リセット */
+	margin: 0; /* margin リセット */
+}
+
+li {
+	list-style: none; /* リストの点削除 */
+}
+
+a {
+	text-decoration: none; /* リンクの下線削除 */
+	color: #444444;
+}
+
+h1, h2, h3 {
+	color: #444444;
+}
+
+/* ここから header */
+#header {
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+	max-width: 960px; /* 最大幅を固定 */
+	margin: 0 auto;
+	padding: 0 4%; /* 左右に4%の余白をとる */
+}
+
+.logo {
+	padding: 10px 0;
+}
+
+.nav-list {
+	display: flex;
+}
+
+.nav-list a {
+	line-height: 60px; /* headerの高さと合わせることで文字の高さを中央にする */
+	margin-left: 30px;
+	font-size: 14px;
+}
+
+/* ここから #mainvisual */
+#mainvisual {
+	background-image: url(img/mainvisual.jpeg);
+	background-size: cover; /* 画面幅に合わせて画像を自動で拡縮 */
+	height: 600px; /* ↑の cover を使う場合は高さか幅のどちらかの指定が必須 */
+	margin-bottom: 85px;
+}
+
+/* ここから #about */
+#about {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+#about h2 {
+	font-size: 32px;
+	border-bottom: 1px solid #444444;
+	display: inline-block; /* ↑の下線の幅を文字幅に合わせるため */
+	margin-bottom: 60px;
+}
+
+.aaa {
+	display: flex;
+	justify-content: center;
+}
+
+.aaa img {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	margin-right: 30px;
+}
+
+.about-text {
+	text-align: left;
+}
+
+.about-text h3 {
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+.about-text p {
+	font-size: 14px;
+}
+
+/* ここから #bicycle */
+#bicycle {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+#bicycle h2 {
+	font-size: 32px;
+	border-bottom: 1px solid #444444;
+	display: inline-block; /* ↑の下線の幅を文字幅に合わせるため */
+	margin-bottom: 60px;
+}
+
+#bicycle ul {
+	display: flex; /* 横並びにする */
+	justify-content: space-between; /* 横並びの位置を均等にする */
+}
+
+#bicycle li {
+	width: 32%; /* あえて32%にすることで間に間隔を作る */
+}
+
+#bicycle img {
+	width: 100%; /* そのままだと画像が元の大きさのままはみ出てしまうので親要素(li)に対して100%で指定 */
+}
+
+#bicycle h3 {
+	font-size: 16px;
+	margin: 10px 0;
+}
+
+#bicycle p {
+	font-size: 14px;
+}
+
+/* ここから footer */
+footer {
+	text-align: center;
+}

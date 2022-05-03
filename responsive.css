@@ -1,0 +1,21 @@
+/* ブレイクポイント600px スマホ向けメディアクエリ */
+@media (max-width: 600px) {
+    .aaa {
+        flex-direction: column; /* flexの縦並びにする */
+        align-items: center; /* ↑を使うと縦横が反対になるので align-items で中央寄せにする */
+    }
+
+    .aaa img {
+        margin-right: 0; /* 縦並びの場合は余白は不要 */
+    }
+
+    #bicycle ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #bicycle li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
