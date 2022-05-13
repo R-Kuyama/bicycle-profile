@@ -4,7 +4,12 @@ document.getElementById('about-btn').addEventListener('click', (e) => {    // #a
     const about = document.getElementById('about').getBoundingClientRect().top;    // #about 要素の位置を取得して定数に代入
     const aboutOffset = window.pageYOffset;
     const aboutTarget = about + aboutOffset - 5;
-    window.scrollTo(0, aboutTarget);    //windowオブジェクトのscrollToメソッドで定数aboutのtopへ移動
+    window.scrollTo({
+        left:0,
+        top: aboutTarget,
+        behavior: 'smooth'
+        
+    });    //windowオブジェクトのscrollToメソッドで定数aboutのtopへ移動
 });
 
 // bicycle-btn を押したら bicycle にスクロールする
@@ -13,5 +18,9 @@ document.getElementById('bicycle-btn').addEventListener('click', (e) => {
     const bicycle = document.getElementById('bicycle').getBoundingClientRect().top;
     const bicycleOffset = window.pageYOffset;
     const bicycleTarget = bicycle + bicycleOffset - 5;
-    window.scrollTo(0, bicycleTarget);
+    window.scrollTo({
+        left:0,
+        top: bicycleTarget,
+        behavior: 'smooth'
+        });
 });
